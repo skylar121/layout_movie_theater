@@ -235,10 +235,28 @@ dd {
   float: right;
 }
 
-.footer_top .btn_social .img_social {
+.footer_top .btn_social a {
+  display: inline-block;
+  margin-left: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 24px;
   height: 24px;
-  margin-left: 25px;
+}
+
+.footer_top .btn_social a:nth-of-type(1) {
+  content: '';
+  background-image: url(./images/SNS_아이콘/twitter.png);
+}
+
+.footer_top .btn_social a:nth-of-type(2) {
+  content: '';
+  background-image: url(./images/SNS_아이콘/instagram.png);
+}
+
+.footer_top .btn_social a:nth-of-type(3) {
+  content: '';
+  background-image: url(./images/SNS_아이콘/facebook.png);
 }
 
 .footer .footer_bottom {
@@ -246,15 +264,12 @@ dd {
   position: relative;
 }
 
-.footer_bottom dl dt,
-dd {
+.footer_bottom dl dt, dd {
   display: inline;
 }
 
-.footer_bottom dl strong, .footer_bottom dl dt {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
+.footer_bottom dl {
+  width: 60vw;
 }
 
 .footer_bottom dl dt::before {
@@ -269,6 +284,13 @@ dd {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
+}
+
+.footer_bottom dl dt,
+.footer_bottom dl dd:nth-of-type(1) {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .footer_bottom .txt_copyright {
